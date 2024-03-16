@@ -1,5 +1,7 @@
 import { getData, storeSurrogateKeys } from '../../../lib/api';
 
+export const dynamic = 'force-static';
+
 export default async function Page({
   params: { id },
 }: {
