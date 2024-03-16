@@ -24,7 +24,7 @@ export async function getData({
   });
 
   if (!response.ok) {
-    throw new Error('Failed to fetch data');
+    throw new Error(`Failed to fetch data: ${JSON.stringify(response)}`);
   }
 
   const { data } = await response.json();
